@@ -1,0 +1,362 @@
+/* Hover effect for navbar links with dot */
+.navbar-nav .nav-link {
+  position: relative;
+  padding-bottom: 5px; /* Add some space to accommodate the dot */
+}
+
+.navbar-nav .nav-link:hover::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #1f2329; /* Change this color as per your design */
+  border-radius: 50%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.service-box {
+  text-align: center;
+  /* padding: 20px; */
+  background-color: #f2f2f2; /* Light grey background */
+  transition: all 0.3s ease;
+  height: 250px;
+}
+
+.service-box i {
+    font-size: 50px;
+    color: #000000; /* Icon color */
+    transition: all 0.3s ease;
+    transform: translateY(-80px); /* Move icon upward */
+    background-color: white;
+    height: 150px; /* Adjust height */
+    width: 150px; /* Adjust width */
+    border-radius: 50%; /* Full circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; /* Center the icon */
+    /* border: 1px solid; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+     rgba(31, 30, 30, 0.1) 0px 0px 0px 1px inset;
+}
+
+
+.service-box h2 {
+  font-size: 38px;
+  color: #000000; /* Text color */
+  font-weight: bold;
+}
+
+.box{
+    background-color: #81d3d3a6;
+}
+.boxs{
+    background-color: #f585c3a6;
+    color: black;
+}
+/* ................................................................................... */
+.boxx h1 {
+    font-size: 40px;
+    color: white; /* Text color inside circle */
+    background-color: #a32e25; /* Blue background color */
+    height: 100px; /* Adjust height */
+    width: 100px; /* Adjust width */
+    border-radius: 50%; /* Full circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5 auto 20px 50px; /* Center the circle and add margin */
+}
+
+.boxx h3 {
+    font-size: 24px;
+    color: #333; /* Text color */
+    margin-bottom: 15px;
+    text-align:start;
+}
+
+.boxx p {
+    font-size: 18px; /* Adjust font size to match h3 */
+    color: #555; /* Adjust text color */
+    text-align: start;
+    margin-bottom: 20px;
+}
+/* ................................................................................................./ */
+.container {
+    margin-top: 60px;
+}
+.row img {
+    max-width: 100%;
+    height: 60vh;
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+.row h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+.row p {
+    font-size: 24px; /* Adjusted to match a short note */
+    color: #555;
+    margin-top: 15px;
+}
+.btn {
+    margin-top: 20px;
+}
+/* .......................................................................................................... */
+.card {
+    margin-top: 20px;
+    /* border: 1px solid #948686; */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.308) 0px 4px 12px;
+    height: 500px;
+}
+
+.card img {
+    max-width: 100%;
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    padding: 20px;
+}
+.skill-bar {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+.skill-bar-fill {
+    background-color: #137380;
+    height: 20px;
+    line-height: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+.info-text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.btn-custom {
+    margin-top: 15px;
+}
+/* ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
+.stats-icon {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 54px;
+    color: #188888; /* Adjust the color as needed */
+}
+
+.stats-number {
+    display: inline-block;
+    font-size: 36px;
+    font-weight: bold;
+    vertical-align: middle;
+    color: #333; /* Adjust the color as needed */
+}
+
+h2 {
+    margin-top: 10px;
+    
+    font-size: 24px;
+    color: #333; /* Adjust the color as needed */
+}
+/* ............................................................................. */
+/* Container styling */
+.container {
+    margin-top: 20px;
+  }
+  
+  /* Text styling */
+  h1 {
+    color: rgb(6, 36, 82);
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  p {
+    font-size: 16px; /* Adjust as needed */
+    margin-bottom: 20px;
+  }
+  
+  /* Event card styling */
+  .event-card {
+    position: relative;
+    border: 1px solid #ddd; /* Optional border for better visibility */
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  
+  .event-card:hover .overlay {
+    opacity: 1;
+  }
+  
+  /* ............................................................................................. */
+ /* Background image for .bg-img */
+.bg-img {
+    background-image: url('hand to hand.avif'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    height: 60vh; /* Set the height of the container to cover the viewport */
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+  }
+  
+  .bg{
+    background-color: rgba(62, 173, 149, 0.582);
+  }
+  
+  .bg-black p {
+    font-size: 20px; /* Font size for the paragraph */
+    margin-bottom: 10px; /* Space between paragraph and heading */
+  }
+  
+  .bg-black h1 {
+    font-size: 36px; /* Font size for the heading */
+    margin-bottom: 20px; /* Space between heading and button */
+  }
+  
+  /* ................................................................................... */
+ /* Review card styling */
+.review-column {
+    margin-bottom: 20px;
+  }
+  
+  .review-card {
+    border: 1px solid #ddd; /* Optional border for better visibility */
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+  }
+  .review-card:hover{
+    background-color: #165e68;
+  }
+  
+
+  
+  .stars {
+    margin: 10px 0;
+  }
+  
+  .stars i {
+    color: #ffd700; /* Gold color for stars */
+    margin: 0 2px; /* Space between stars */
+  }
+  
+  .review-text {
+    font-size: 14px; /* Adjust as needed */
+    color: #555;
+
+  }
+  .review-text:hover{
+    color: white;
+  }
+  /* .................................................................... */
+  /* Basic reset for images */
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Styling the h1 element */
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  /* Wrapper for images to enable hover effect */
+  .img-wrapper {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 15px; /* Adds space between rows */
+    padding: 10px;
+    height: 400px;
+  }
+  
+  .img-wrapper img {
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+  }
+  
+  /* Hover effect */
+  .img-wrapper:hover img {
+    transform: scale(1.1); /* Zoom in effect */
+  }
+  
+
+  /* footer////////////////////////////////////////////////////////////////////////////// */
+  /* Footer Background and Text */
+.bg-darks {
+    background-color: #165470;
+
+  }
+  
+  .text-white {
+    color: #ffffff;
+  }
+  
+  /* Footer Headings */
+  h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  /* Footer Links */
+  a.text-white {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  a.text-white:hover {
+    color: #007bff;
+  }
+  
+  /* Social Media Icons */
+  .fab {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .me-3 {
+    margin-right: 1rem;
+  }
+  
+  /* Footer Spacing */
+  .py-4 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .list-unstyled {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .list-unstyled li {
+    margin-bottom: 10px;
+  }
+  
+  .fas {
+    margin-right: 8px;
+  }
+  .btn{
+     background-color: #137380;
+     color: white;
+  }
+  .btn:hover{
+    background-color: white;
+    border: 1px solid rgb(35, 31, 252) ;
+  }
